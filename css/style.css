@@ -33,7 +33,6 @@ header{
 	background: transparent;
 	padding: 20px 5%;
 	transition: all .35s ease;
-	background-color: #FFFFFF6D;
 
 }
 .logo{
@@ -145,7 +144,7 @@ section{
 	font-size: var(--big-font);
 	font-weight: 800;
 	line-height: 1.2;
-	letter-spacing: .6rem;
+	letter-spacing: .3rem;
 	margin-bottom: 1.4rem;
 }
 .home-text span{
@@ -572,6 +571,41 @@ cart
   
   .cell-long {
 	width: 700px;
+  }
+  @media (max-width: 670px){
+	.cart-background {
+		width: 100%;
+		background-color: #F7F4F1;
+		padding: 30px;
+		max-width: 80%;
+		border-radius: 10px;
+		margin-top: 8rem;
+		margin-bottom: 6rem;
+		margin-left: 10%;
+		margin-right: 10%;
+	  }
+	  .cart-table {
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 20px;
+		background: white;
+		text-align: center;
+	  }
+	  .cart-table td {
+		display:flex;
+		text-align: right;
+	  }
+	  .cart-table th{
+		display:flex;
+		text-align: left;
+	  }/*Is there any way that I can lower th*/
+	  .cart-table th:nth-child(2) {
+		width: 20%;
+	  }
+	  
+	  .cell-long {
+		width: 90%;
+	  }
   }
 
 /*
