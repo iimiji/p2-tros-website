@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P02 - Style Guide of TROS</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>P02 - Style Guide of TROS</h1>
+
+      <p>A template you can use to start building out your own style guides with.</p>
+
+
+      <nav>        
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="product_listing.html">Product Listing Template</a>
+        <a href="checkout.html">Checkout Template</a>
+        <a href="#citations">Citations</a>
+      </nav>
+
+    </header>
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+
+      <section class="element">
+        <h3>In-text link</h3><br>
+        <nav>
+        <a href="https://ca.burberry.com">Example Website</a>
+        </nav>
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.navlist</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;ul class="navlist"&gt;
+          &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <ul class="navlist">
+          <li><a href="#home">Home</a></li>
+        </ul>
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.btn</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;a href="#" class="btn"&gt;Submit&lt;/a&gt;<br>
+          &lt;a href="#" class="btn"&gt;Reset&lt;/a&gt;<br>
+        </code>
+
+        <h4>Rendered element:</h4>
+        <a href="#" class="btn">Submit</a>
+        <a href="#" class="btn">Reset</a>
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.account-info</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;fieldset class="account-info"&gt;<br>
+          &lt;label&gt;<br>
+              Username
+              &lt;input type="text" name="username"&gt;<br>
+              &lt;/label&gt;<br>
+              &lt;/fieldset&gt;<br>
+        </code>
+
+        <h4>Rendered element:</h4>
+
+          <fieldset class="account-info">
+            <label>
+              Username
+              <input type="text" name="username">
+            </label>
+          </fieldset>
+
+        
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.account-info</p>
+        <p>.account-action</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;fieldset class="account-action"&gt;<br>
+          &lt;label&gt;<br>
+          &lt;input type="checkbox" name="remember"&gt;<br> Stay signed in
+          &lt;/label&gt;<br>
+          &lt;/fieldset&gt;<br>
+        </code>
+
+        <h4>Rendered element:</h4>
+
+        
+          <fieldset class="account-action">
+            <label>
+              <input type="checkbox" name="remember"> Stay signed in
+            </label>
+          </fieldset>
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        
+        <h4>Sample code:</h4>
+        <code>
+          &lt;a href="https://ca.burberry.com"&gt;
+          &lt;img alt="Burberry" src="https://"&gt;
+          &lt;/a&gt;
+        </code>
+
+        <section class="imgclick">
+          <a href="https://ca.burberry.com">
+            <img alt="Burberry" src="https://d32qe1r3a676y7.cloudfront.net/eyJidWNrZXQiOiJibG9nLWVjb3RyZWUiLCJrZXkiOiAiYmxvZy8wMDAxLzAxL2FkNDZkYmI0NDdjZDBlOWE2YWVlY2Q2NGNjMmJkMzMyYjBjYmNiNzkuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6IDkwMCwiaGVpZ2h0IjowLCJmaXQiOiJjb3ZlciJ9fX0=">
+          </a>
+        </section>
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+        <h2>TROS</h2>
+        <h3>TREE</h3>
+        <h4>ECO</h4>
+        <h5>Sustainability</h5>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+
+        <p>
+        <strong>TROS is a British luxury brand, headquartered in London.</strong>. Since being founded in 1856, TROS has been guided by the core belief that Creativity Opens Spaces. From developing outerwear that allowed daring women and women to surpass the limits of human endeavour to being a luxury pioneer in the digital space, our purpose is to unlock the power of imagination to push boundaries and open new possibilities for our people, our customers and our communities.
+        A paragraph </p>
+
+      </section>
+    
+      <h4>CSS selector</h4>
+        <p>.explain-box</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class="explain-box"&gt;
+          &lt;h4&gt;Questionsv/h4&gt;&lt;br&gt;
+          &lt;p&gt;paragraph with answer&lt;/p&gt;
+          &lt;/div&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+
+        <div class="explain-box">
+          <h4>Questions</h4><br>
+          <p>paragraph with answer</p>
+      </div>
+      <br>
+
+      <section id="our_company">
+        <h3>ABOUT TROS</h3>
+        <h2>Sustainability and Minimalism</h2>
+        <p>Beyond a season, a trend, a moment, to a more sustainable world. Discover a destination dedicated to progress. We want to share the whole story; the beginning, middle and beyond of everything we do and make. From each new innovative material to the suppliers we work with. Beyond our collections, within our production chains and throughout our community. Because we all know that better fashion isn’t about the surface. It goes way beyond that...</p>
+        
+        <div class="explain-box">
+          <h4>What does the company do, or offer?</h4><br>
+          <p>TROS - Tree + Eco, a Female sustainable fashion brand. TROS offers a distinctive design-led, minimalist style that felt modern and very different from the rest of our British wardrobes.</p>
+      </div>
+  
+      <br>
+  
+      <div class="explain-box">
+          <h4>Who is the company to potential customers?</h4><br>
+          <p>TROS is targeting those who design their lifestyle very simple and modern. Furthermore, as part of my primary research and curiosity, we spoke to one of TROS Store Managers, he explained that most of the customers are those who work in creative industry and communication such as fashion stylist, digital content creator. As location-wise, it is strategically in the centre of the business district, many young professionals aged 24 to 35 come to purchase their pieces in a more classic and smart style. They also have other customers older than 40 up to 60 who regularly come to the store to check and purchase their new collections. </p>
+      </div>
+  
+      <br>
+  
+      <div class="explain-box">
+          <h4>Why might this company entice someone to purchase a product or service</h4><br>
+          <p>TROS uses some eco-friendly materials including recycled materials and has fast fashion traits such as on trend styles and regular new arrivals. The TROS aesthetic is timeless design offered in a contemporary way with a focus on quality.</p>
+      </div>
+</section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        
+          <h4>CSS selector:</h4>
+          <p>div span</p>
+  
+          <h4>Sample code:</h4>
+          <code>
+            &lt;div&gt;<br>
+            &lt;span&gt;1&lt;/span&gt;<br> My First Item
+            &lt;/div&gt;
+            &lt;div&gt;
+            &lt;span&gt;2&lt;/span&gt;<br> My Second Item
+            &lt;/div&gt;
+            &lt;div&gt;
+            &lt;span&gt;3&lt;/span&gt;<br> My Third Item
+            &lt;/div&gt;<br>
+
+
+            &lt;ul class="navlist"&gt;<br>
+            &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;li&gt;<br>
+            &lt;li&gt;&lt;a href="#featured"&gt;Featured&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;li&gt;&lt;a href="#new"&gt;New&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;li&gt;&lt;a href="#cart"&gt;Cart&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;/ul&gt;<br>
+          </code>
+  
+          <h4>Rendered element:</h4>
+
+        <section id="numberlist">
+          <div>
+            <span>1</span> My First Item
+          </div>
+          <div>
+            <span>2</span> My Second Item
+          </div>
+          <div>
+            <span>3</span> My Third Item
+          </div>
+        </section>
+      </section>
+
+    </section>
+
+    
+
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+
+        <h3>Main Navigation</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;ul class="navlist"&gt;<br>
+          &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;li&gt;<br>
+          &lt;li&gt;&lt;a href="#featured"&gt;Featured&lt;/a&gt;&lt;/li&gt;<br>
+          &lt;li&gt;&lt;a href="#new"&gt;New&lt;/a&gt;&lt;/li&gt;<br>
+          &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;<br>
+          &lt;li&gt;&lt;a href="#cart"&gt;Cart&lt;/a&gt;&lt;/li&gt;<br>
+          &lt;/ul&gt;<br>
+        </code>
+
+        <h4>Rendered element:</h4>
+      </section>
+
+      <section class="nav_top">
+
+        <a href="#" class="logo">TROS</a>
+        <ul class="navlist">
+            <li><a href="../index.html">Home</a></li>
+          <!--<li><a href="feature.html">Featured</a></li>-->
+          <li><div class="dropdown">
+                    <a href="../html/feature.html">
+                        Featured
+                    </a> 
+            <div class="dropdown-content">
+              <a href="../html/dress.html">Dress</a>
+              <a href="../html/top.html">Top</a>
+              <a href="../html/bottom.html">Bottom</a>
+              <a href="../html/bag.html">Bags</a>
+            </div>
+            </div>
+          </li>
+          <li><a href="../html/new.html">New</a></li>
+          <li><a href="../html/about.html">About</a></li>
+        </ul>
+        <div class="header-icons">
+          <a href="#cart"><i class='bx bx-shopping-bag'></i></a>
+          <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+
+      </section>
+
+      <section class="element">
+        <h3>Landing Page</h3><br>
+  
+        <h4>CSS selector:</h4>
+        <p>.home</p>
+        <p>.home-text</p>
+  
+  
+        <h4>Sample code:</h4><br>
+        <code>
+          &lt;section class="home" id="home"&gt;<br>
+          &lt;div class="home-text"&gt;<br>
+          &lt;h1&gt;Womens's&lt;br&gt;&lt;span&gt;New Arrivals&lt;/span&gt;&lt;/h1&gt;<br>
+          &lt;p&gt;New colors, now also available in Womens's sizing&lt;/p&gt;<br>
+          &lt;a href="#" class="btn"&gt;View Collection&lt;/a&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;/section&gt;<br>
+        </code>
+        <h4>Rendered element:</h4>
+  
+      </section>
+  
+      <!----home--->
+        <section class="home" id="home">
+          <div class="home-text">
+            <h1>Womens's<br><span>New Arrivals</span></h1>
+            <p>New colors, now also available in Womens's sizing</p>
+            <a href="#featured" class="btn">View Collection</a>
+          </div>
+        </section>
+
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.new-content</p>
+        <p>.box</p>
+
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class="box"&gt;<br>
+          &lt;img src="img/tren1.jpg"&gt;<br>
+          &lt;h5&gt;Lorem Ipsum dizgi&lt;/h5&gt;<br>
+          &lt;h6&gt;$188&lt;/h6&gt;<br>
+          &lt;div class="sale"&gt;<br>
+          &lt;h4&gt;Sale&lt;/h4&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+        </code>
+        <h4>Rendered element:</h4>
+
+      </section>
+
+      <!----new--->
+      <section class="new" id="new">
+
+        <div class="center-text">
+          <h2>New Arrivals</h2>
+        </div>
+
+        <div class="new-content">
+          <div class="box">
+            <img src="img/tren1.jpg" alt="new-product">
+            <h5>TROS 22f Sweater</h5>
+            <h6>$499</h6>
+            <div class="sale">
+              <h4>Sale</h4>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="img/tren2.jpg" alt="new-product">
+            <h5>TROS 22f Sweater</h5>
+            <h6>$599</h6>
+            <div class="sale">
+              <h4>Sale</h4>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="img/tren3.jpg" alt="new-product">
+            <h5>TROS 22f Sweater</h5>
+            <h6>$899</h6>
+            <div class="sale">
+              <h4>Sale</h4>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="img/tren4.jpg" alt="new-product">
+            <h5>TROS 22f Sweater</h5>
+            <h6>$299</h6>
+            <div class="sale">
+              <h4>Sale</h4>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Sale Banner</h3><br>
+
+        <h4>CSS selector:</h4>
+        <p>.cta</p>
+        <p>.cta-text</p>
+
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class="cta-text"&gt;<br>
+          &lt;h6&gt;SUMMER ON SALE&lt;/h6&gt;<br>
+          &lt;h4&gt;20% OFF &lt;br&gt; NEW ARRIVAL&lt;/h4&gt;<br>
+          &lt;a href="#" class="btn"&gt;Shop Now&lt;/a&gt;<br>
+          &lt;/div&gt;<br>
+        </code>
+        <h4>Rendered element:</h4>
+
+      </section>
+
+      <!----cta--->
+      <section class="cta">
+        <div class="cta-text">
+          <h6>SUMMER ON SALE</h6>
+          <h4>20% OFF <br> NEW ARRIVAL</h4>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Features</h3><br>
+
+        <h4>CSS selector:</h4>
+        <p>.featured</p>
+        <p>.center-text</p>
+        <p>.featured-content</p>
+        <p>.row</p>
+        <p>.arrow</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class="featured-content"&gt;<br>
+          &lt;div class="row"&gt;<br>
+          &lt;img src="img/fea1.jpg"&gt;<br>
+          &lt;div class="fea-text"&gt;<br>
+          &lt;h5&gt;Womens&lt;/h5&gt;<br>
+          &lt;p&gt;10 items&lt;/p&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;div class="arrow"&gt;<br>
+          &lt;a href="#">&lt;i class='bx bx-right-arrow-alt' &gt;&lt;/i&gt;&lt;/a&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+        </code>
+        <h4>Rendered element:</h4>
+
+      </section>
+
+      <!----featured--->
+      <section class="featured" id="featured">
+        <div class="center-text">
+          <h2>Featured Categories</h2>
+        </div>
+
+        <div class="featured-content">
+          <div class="row">
+            <img src="img/fea1.jpg" alt="fea-cont">
+            <div class="fea-text">
+              <h5>Womens</h5>
+              <p>10 items</p>
+            </div>
+            <div class="arrow">
+              <a href="#new"><i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <img src="img/fea2.jpg" alt="fea-cont">
+            <div class="fea-text">
+              <h5>Womens</h5>
+              <p>10 items</p>
+            </div>
+            <div class="arrow">
+              <a href="#new"><i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <img src="img/fea3.jpg" alt="fea-cont">
+            <div class="fea-text">
+              <h5>Womens</h5>
+              <p>10 items</p>
+            </div>
+            <div class="arrow">
+              <a href="#new"><i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <img src="img/fea4.jpg" alt="fea-cont">
+            <div class="fea-text">
+              <h5>Womens</h5>
+              <p>10 items</p>
+            </div>
+            <div class="arrow">
+              <a href="#new"><i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <img src="img/fea5.jpg" alt="fea-cont">
+            <div class="fea-text">
+              <h5>Womens</h5>
+              <p>10 items</p>
+            </div>
+            <div class="arrow">
+              <a href="#new"><i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <img src="img/fea6.jpg" alt="fea-cont">
+            <div class="fea-text">
+              <h5>Womens</h5>
+              <p>10 items</p>
+            </div>
+            <div class="arrow">
+              <a href="#new"><i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+          <section class="element">
+            <h3>Payment Form</h3>
+          </section>
+          <section id="payment">
+            <h3>Payment Form</h3>
+    
+            <h4>CSS selector</h4>
+              <p>.payment_row</p>
+              <p>.column</p>
+              <p>.container</p>
+    
+              <h4>Sample code:</h4>
+              <code>
+                &lt;div class="payment_row"&gt;<br>
+                &lt;div class="col-50"&gt;<br>
+                &lt;h3&gt;Billing Address&lt;/h3&gt;&lt;br&gt;<br>
+                &lt;label for="fname"&gt;&lt;i class="fa fa-user"&gt;&lt;/i&gt; Full Name&lt;/label&gt;<br>
+                &lt;input type="text" id="fname" name="firstname" placeholder="Miji Mrs. Kim"&gt;<br>
+                &lt;label for="email"&gt;&lt;i class="fa fa-envelope"&gt;&lt;/i&gt; Email&lt;/label&gt;<br>
+                &lt;input type="text" id="email" name="email" placeholder="Miji@example.com"&gt;<br>
+                &lt;label for="adr"&gt;&lt;i class="fa fa-address-card-o">&lt;/i&gt; Address&lt;/label&gt;<br>
+                &lt;input type="text" id="adr" name="address" placeholder="542 W. 15th Street"&gt;<br>
+                &lt;label for="city"&gt;&lt;i class="fa fa-institution"&gt;&lt;/i&gt; City&lt;/label&gt;<br>
+                &lt;input type="text" id="city" name="city" placeholder="New York"&gt;<br>
+        
+                &lt;div class="payment_row"&gt;<br>
+                &lt;div class="col-50"&gt;<br>
+                &lt;label for="state">State&lt;/label&gt;<br>
+                &lt;input type="text" id="state" name="state" placeholder="NY"&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;div class="col-50"&gt;<br>
+                &lt;label for="zip"&gt;Zip&lt;/label&gt;<br>
+                &lt;input type="text" id="zip" name="zip" placeholder="10001"&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/div&gt;<br>
+              </code> 
+    
+            <h4>Rendered element:</h4>
+    
+            <div class="payment_row">
+              <div class="col-25">
+                <div class="container">
+                  <h4>Cart
+                    <span class="price" style="color:black">
+                      <i class="fa fa-shopping-cart"></i>
+                      <b>[4]</b>
+                    </span>
+                  </h4><br>
+                  <p><a href="#">Product 1</a> <span class="price">$499</span></p>
+                  <p><a href="#">Product 2</a> <span class="price">$599</span></p>
+                  <p><a href="#">Product 3</a> <span class="price">$899</span></p>
+                  <p><a href="#">Product 4</a> <span class="price">$299</span></p>
+                  <hr>
+                  <p><span class="price" style="color:black"><b>$2,296</b></span></p>
+                </div>
+              </div>
+              <div class="col-75">
+                <div class="container">
+                  <form action="/action_page.php">
+            
+                    <div class="payment_row">
+                      <div class="col-50">
+                        <h3>Billing Address</h3><br>
+                        <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Miji Mrs. Kim">
+                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input type="text" id="email" name="email" placeholder="Miji@example.com">
+                        <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                        <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                        <label for="city"><i class="fa fa-institution"></i> City</label>
+                        <input type="text" id="city" name="city" placeholder="New York">
+            
+                        <div class="payment_row">
+                          <div class="col-50">
+                            <label for="state">State</label>
+                            <input type="text" id="state" name="state" placeholder="NY">
+                          </div>
+                          <div class="col-50">
+                            <label for="zip">Zip</label>
+                            <input type="text" id="zip" name="zip" placeholder="10001">
+                          </div>
+                        </div>
+                      </div>
+            
+                      <div class="col-50">
+                        <h3>Payment</h3><br>
+                        <label for="cname">Bank Company</label>
+                        <input type="text" id="cname" name="cardname" placeholder="TD | RBC | Master">
+                        <label for="cname">Name on Card</label>
+                        <input type="text" id="cname" name="cardname" placeholder="Miji Kim">
+                        <label for="ccnum">Credit card number</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                        <label for="expmonth">Exp Month</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            
+                        <div class="payment_row">
+                          <div class="col-50">
+                            <label for="expyear">Exp Year</label>
+                            <input type="text" id="expyear" name="expyear" placeholder="2018">
+                          </div>
+                          <div class="col-50">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="352">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <label>
+                      <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                    </label>
+                    <br>
+                    <a href="#" class="btn">Continue to checkout</a>
+                  </form>
+                </div>
+              </div>
+            
+              
+            </div>
+          </section>
+
+          <section class="element">
+            <h3>Checkout Cart</h3>
+    
+            <h4>CSS selector</h4>
+              <p>.cart-background</p>
+              <p>.cart-table</p>
+              <p>.cell-long</p>
+    
+            <h4>Sample code:</h4>
+              <code>
+                &lt;div class="cart-background"&gt;<br>
+    
+                  &lt;h3&gt;Your shopping cart&lt;/h3&gt;&lt;br&gt;<br>
+                  &lt;table class="cart-table"&gt;<br>
+                    &lt;thead&gt;<br>
+                        &lt;tr&gt;<br>
+                            &lt;th&gt;&lt;/th&gt;<br>
+                              &lt;th class="cell-long"&gt;Item&lt;/th&gt;<br>
+                              &lt;th&gt;Amount&lt;/th&gt;<br>
+                              &lt;th&gt;Price&lt;/th&gt;<br>
+                              &lt;th&gt;Total&lt;/th&gt;<br>
+                              &lt;/tr&gt;<br>
+                          &lt;/thead&gt;<br>
+                      &lt;tbody&gt;<br>
+                        &lt;tr&gt;<br>
+                              &lt;td&gt;&lt;img src="img/brand3.png" alt="dress" style="width:110px"&gt;<br>            
+                              &lt;/td&gt;<br>
+                              &lt;td&gt;&lt;strong&gt;22/F Shoulder Bags&lt;/strong>&lt;/td&gt;<br>
+                              &lt;td&gt;1&lt;/td&gt;<br>
+                              &lt;td&gt;$499.99&lt;/td&gt;<br>
+                              &lt;td&gt;$499.99&lt;/td&gt;<br>
+                              &lt;/tr&gt;<br>
+                          &lt;tr&gt;<br>
+                            &lt;td colspan="5" style="text-align: right;"&gt;Total price: $7000&lt;/td&gt;<br>
+                              &lt;/tr&gt;<br>
+                          &lt;/tbody&gt;<br>
+                      &lt;/table&gt;<br>
+                  &lt;a href="#" class="btn">Purchase&lt;/a&gt;<br>
+                  &lt;/div&gt;<br>
+              </code> 
+            
+            <h4>Rendered element:</h4>
+
+          </section>
+
+          <section id="cart">
+            
+    
+            <div class="cart-background">
+    
+              <h3>Your shopping cart</h3><br>
+              <table class="cart-table">
+                  <thead>
+                      <tr>
+                          <th></th>
+                          <th class="cell-long">Item</th>
+                          <th>Amount</th>
+                          <th>Price</th>
+                          <th>Total</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td><img src="img/tren3.jpg" alt="dress" style="width:110px">                   
+                          </td>
+                          <td><strong>22/F Shoulder Bags</strong></td>
+                          <td>1</td>
+                          <td>$499.99</td>
+                          <td>$499.99</td>
+                      </tr>
+                      <tr>
+                          <td colspan="5" style="text-align: right;">Total price: $7000</td>
+                      </tr>
+                  </tbody>
+              </table>
+              <a href="#payment" class="btn">Purchase</a>
+            </div>
+          </section>
+
+          <section class="element">
+            <h3>CONTACT</h3>
+  
+            <h4>CSS selector</h4>
+              <p>.contact</p>
+              <p>.main-btn</p>
+          
+            <h4>Sample code:</h4>
+              <code>
+                &lt;form id="contact_2" class="topBefore"&gt;<br>
+                &lt;input id="name" type="text" placeholder="NAME"&gt;<br>
+                &lt;input id="email_2" type="text" placeholder="E-MAIL"&gt;<br>
+                &lt;textarea id="message" placeholder="MESSAGE"&gt;&lt;/textarea&gt;<br>
+                &lt;a href="#" class="btn">Submit&lt;/a&gt;<br>
+                &lt;/form&gt;<br>
+              </code> 
+            
+            <h4>Rendered element:</h4>
+
+          </section>
+
+          <section id="contact">
+            <h3>CONTACT</h3><br>
+              <form id="contact_2" class="topBefore">
+                  
+                    <input id="name" type="text" placeholder="NAME">
+                    <input id="email_2" type="text" placeholder="E-MAIL">
+                    <textarea id="message" placeholder="MESSAGE"></textarea>
+                  <a href="#" class="btn">Submit</a>
+              </form>
+          </section>
+
+          <section class="element">
+            <h3>Feedback</h3>
+            <h3>Feedback Confirm</h3>
+
+            <h4>CSS selector</h4>
+              <p>.panel</p>
+              <p>.panel-container</p>
+          
+            <h4>Sample code:</h4>
+              <code>
+                &lt;div id="panel" class="panel-container"&gt;<br>
+                &lt;strong
+                &gt;<br>How satisfied are you with our&lt;br&gt;<br>
+                    customer shopping experience?&lt;strong
+                    &gt;<br>
+                  &lt;div class="ratings-container"&gt;<br>
+                  &lt;div class="rating"&gt;<br>
+                  &lt;img
+                        src="https://cdn-icons-png.flaticon.com/512/17/17375.png"
+                        alt=""
+                        &gt;<br>
+                      &lt;small&gt;<br>Unhappy&lt;small&gt;<br>
+                      &lt;div&gt;<br>
+                      &lt;div&gt;<br>
+                      &lt;a href="#" class="btn"&gt;<br>Send Feedback&lt;a&gt;<br>
+                      &lt;div&gt;<br>
+              </code> 
+            
+            <h4>Rendered element:</h4>
+
+          </section>
+
+          <section id="feedback">
+            <div id="panel" class="panel-container">
+              <strong
+                >How satisfied are you with our<br />
+                customer shopping experience?</strong
+              >
+              <div class="ratings-container">
+                <div class="rating">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/17/17375.png"
+                    alt=""
+                  />
+                  <small>Unhappy</small>
+                </div>
+                <div class="rating">
+                  <img
+                    src="https://static-00.iconduck.com/assets.00/neutral-face-icon-511x512-5lj3sogl.png"
+                    alt=""
+                  />
+                  <small>Neutral</small>
+                </div>
+                <div class="rating active">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/42/42691.png"
+                    alt=""
+                  />
+                  <small>Satisfied</small>
+                </div>
+              </div>
+              <a href="feedbackSent.html" class="btn">Send Feedback</a>
+          </div>
+        </section>
+        <section id="feedbackSent">
+          <div id="panel" class="panel-container">
+            <strong
+              >Thank you for your feedback</strong
+            >
+            <div class="ratings-container">
+                <div class="rating">
+                  <img
+                    src="https://img.icons8.com/material-sharp/384/sent.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            <a href="../index.html" class="btn">Shop Again</a>
+        </div>
+      </section>
+
+          <section class="element">
+            <h3>Text Input Field with Label</h3>
+    
+            <h4>CSS selector:</h4>
+            <p>.account-info</p>
+            <p>.account-action</p>
+    
+            <h4>Sample code:</h4>
+            <code>&lt;fieldset class="account-info"&gt;input type="text" name="username"&lt;/fieldset&gt;</code>
+    
+            <h4>Rendered element:</h4>
+    
+            <form>
+              <fieldset class="account-info">
+                <label>
+                  Username
+                  <input type="text" name="username">
+                </label>
+                <label>
+                  Password
+                  <input type="password" name="password">
+                </label>
+              </fieldset>
+              <fieldset class="account-action">
+                <input class="btn" type="submit" name="submit" value="Login">
+                <label>
+                  <input type="checkbox" name="remember"> Stay signed in
+                </label>
+              </fieldset>
+            </form>
+    
+            
+          </section>
+
+        </section>
+    
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <section class="element">
+      <h3>Detail Page</h3><br>
+
+      <h4>CSS selector:</h4>
+      <p>.container_2</p>
+      <p>.img-box</p>
+
+
+      <h4>Sample code:</h4><br>
+      <code>
+
+        &lt;section id="detail"&gt;<br>
+        &lt;div class="container_2"&gt;<br>
+        &lt;div class="img-box"&gt;<br>
+        &lt;img src="img/brand4.png"&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;div class="text-box"&gt;<br>
+        &lt;h1&gt;product name&lt;/h1&gt;<br>
+        &lt;P&gt;<br>
+                description
+                &lt;/P&gt;<br>
+                &lt;h2&gt;$price&lt;/h2&gt;<br>
+                &lt;a href="#" class="btn">Add to Cart&lt;/a&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/div&gt;<br>
+      </code>
+      <h4>Rendered element:</h4>
+
+    </section>
+
+    <section id="detail">
+      <div class="container_detail">
+        <div class="img-box">
+          <img src="../img/dress/dress1.jpg" alt="detail-img">
+        </div>
+        <div class="text-box">
+          <h1>
+            TROS 22f Net Dress</h1><br>
+          <P>
+            This classic tie-back top is crafted from a cotton-blend, 
+            it is cut for a regular fit and falls at the hips. 
+            It has slight dolman sleeves which gather at the cuffs 
+            and bust darts for a flattering finish. 
+            The back of the top has a deep V-neck and long ties 
+            which can be adjusted for a personalised fit.<br><br>
+          
+            <strong>
+      - High, round neck<br>
+      - Straight hem<br><br>
+      </strong>
+      <i>
+      68% Cotton, 24% Viscose, 8% Elastane / Machine wash<br>
+
+      Back length of size S is 18.5cm / Model wears a size S<br>
+      </i>
+          </P>
+          <h2>$1499</h2>
+          <a href="../html/cart.html" class="btn">Add to Cart</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="element">
+      <h3>Footer</h3><br>
+
+      <h4>CSS selector:</h4>
+      <p>.contact2</p>
+      <p>.main-contact</p>
+
+
+      <h4>Sample code:</h4><br>
+      <code>
+        &lt;section class="contact2" id="contact2"&gt;<br>
+        &lt;div class="main-contact"&gt;<br>
+        &lt;h3&gt;Tros&lt;/h3&gt;<br>
+        &lt;h5&gt;Let's Connect With Us&lt;/h5&gt;<br>
+        &lt;div class="icons"&gt;<br>
+        &lt;a href="#"&gt;&lt;i class='bx bxl-facebook-square' &gt;&lt;/i&gt;&lt;/a&gt;<br>
+        &lt;a href="#"&gt;&lt;i class='bx bxl-instagram-alt' &gt;&lt;/i&gt;&lt;/a&gt;<br>
+        &lt;a href="#"&gt;&lt;i class='bx bxl-twitter' >&lt;/i&gt;&lt;/a&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;/div&gt;<br>
+      
+              &lt;ul class="main-contact"&gt;<br>
+            &lt;li&gt;Shopping&lt;/li&gt;<br>
+            &lt;li&gt;&lt;a href="#"&gt;Clothing Store&lt;/a&gt;&lt;/li&gt;<br>
+              &lt;li&gt;&lt;a href="#"&gt;Trending Shoes&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;li&gt;&lt;a href="#"&gt;Accessories&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;li&gt;&lt;a href="#"&gt;Sale&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;/ul&gt;<br>
+      
+              &lt;/section&gt;<br>
+      
+        &lt;div class="last-text"&gt;<br>
+          &lt;p&gt;Copyright © 2022 All rights reserved&lt;/p&gt;<br>
+          &lt;/div&gt;<br>
+
+
+
+
+
+
+        &lt;section id="detail"&gt;<br>
+        &lt;div class="container_2"&gt;<br>
+        &lt;div class="img-box"&gt;<br>
+        &lt;img src="img/brand4.png"&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;div class="text-box"&gt;<br>
+        &lt;h1&gt;product name&lt;/h1&gt;<br>
+        &lt;P&gt;<br>
+                description
+                &lt;/P&gt;<br>
+                &lt;h2&gt;$price&lt;/h2&gt;<br>
+                &lt;a href="#" class="btn">Add to Cart&lt;/a&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/div&gt;<br>
+      </code>
+      <h4>Rendered element:</h4>
+
+    </section>
+
+    <section class="contact2" id="contact2">
+      <div class="main-contact">
+        <h3>Tros</h3>
+        <h5>Let's Connect With Us</h5>
+        <div class="icons">
+          <a href="#"><i class='bx bxl-facebook-square' ></i></a>
+          <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+          <a href="#"><i class='bx bxl-twitter' ></i></a>
+        </div>
+      </div>
+  
+      <ul class="main-contact">
+        <li>Explore</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#new">New</a></li>
+        <li><a href="#contact">Contact</a></li>
+          </ul>
+  
+  
+      <ul class="main-contact">
+        <li>Shopping</li>
+        <li><a href="#">Dress</a></li>
+        <li><a href="#">Top</a></li>
+        <li><a href="#">Bottom</a></li>
+        <li><a href="#">Bag</a></li>
+          </ul>
+
+          <ul class="main-contact">
+            <li>StyleGuide</li>
+            <li><a href="../P2-TROS_StyleGuide/index.html">Explore our style</a></li>
+              </ul>
+              
+    </section>
+  
+    <div class="last-text">
+      <p>Copyright © 2022 All rights reserved</p>
+    </div>
+
+    <section id="moodboard">
+      <h2>MOOD BOARD</h2>
+      <h3>
+        "Beyond the rustic splendor, the minimum to the maximum."</h3>
+      <h2>	font-family: 'Open Sans', sans-serif;      </h2>
+      <P>Choose a font that creates a neat and luxurious atmosphere</P>
+
+      <img src="img/TROS_colour.png" alt="moodboardIdea" width="600">
+      <p>Located with nature-friendly colors and minimalism-seeking black and white</p>
+
+      <img src="img/TROS_persona.png" alt="moodboardIdea" width="600">
+      <p></p>
+
+      <img src="img/TROS_style.png" alt="moodboardIdea" width="1200">
+      <p></p>
+      <img src="img/TROS_website.png" alt="moodboardIdea" width="1200">
+      <p></p>
+
+    </section>
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+        <li><a href="#">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label</a>.</li>
+        <li><a href="#">https://learn.shayhowe.com/html-css/building-forms/#practice-1</a>.</li>
+        <li><a href="#">https://www.w3schools.com/howto/howto_css_checkout_form.asp</a>.</li>
+        <li><a href="#">https://blog.hubspot.com/marketing/jump-link-same-page</a>.</li>
+        <li><a href="#">https://codepen.io/amardilo/pen/naaevB</a>.</li>
+        <li><a href="#">https://skinbetter.com/wp-content/uploads/2017/10/Skincare-Tips-in-Your-30s.jpg</a>.</li>
+        <li><a href="#">https://www.cos.com/en/women/womenswear/tops/product.tie-back-long-sleeved-top-black.1112330002.html</a>.</li>
+        <li><a href="#">https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vogue.com%2Ffashion-shows%2Ffall-2020-ready-to-wear%2Fcos&psig=AOvVaw0XVjLLvV23ufy1LJSSol0j&ust=1666428502182000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCND2son48PoCFQAAAAAdAAAAABAE</a>.</li>
+        <li><a href="#">https://www.youtube.com/c/EasyTutorialsVideo</a>.</li>
+        <li><a href="#">https://www.youtube.com/channel/UC6iO-h3n4adFsp3krxznqHg</a>.</li>
+        <li><a href="#">https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp</a>.</li>
+        <li><a href="#">https://www.youtube.com/channel/UC6iO-h3n4adFsp3krxznqHg</a>.</li>
+        <li><a href="#">https://www.youtube.com/channel/UC6iO-h3n4adFsp3krxznqHg</a>.</li>
+        <p>Image & extra Source</p>
+        <p>
+          https://www.refinery29.com/en-us/shop/product/folded-leather-shopper-101019
+          https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cos.com%2Fen%2Fwomen%2Faccessories%2Fbags%2Fproduct.quilted-oversized-shoulder-bag-beige.0916460002.html&psig=AOvVaw20zz7YWyFf1HR7bY3QHqIR&ust=1666861089397000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCLi2gsvD_foCFQAAAAAdAAAAABAH
+          https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hollandcooper.com%2Fcollections%2Fbags&psig=AOvVaw1WUW5M6aDegxE047wWUiot&ust=1666860496362000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCKjblbDB_foCFQAAAAAdAAAAABAr
+          https://www.tusting.co.uk/wp-content/uploads/Tusting-Kimbolton-Tan-LS-Banner.jpg
+          https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.tvj.co.kr%2Fnews%2FarticleView.html%3Fidxno%3D66430&psig=AOvVaw1G9a2fJmuolgWiAEC6G7NL&ust=1666861027519000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCMijqa3D_foCFQAAAAAdAAAAABAE
+          https://www.vogue.com/fashion-shows/fall-2020-ready-to-wear/cos/slideshow/collection#1
+          https://assets.vogue.com/photos/5e555f199e08500008aafa16/master/w_1600,c_limit/00002-COS-FALL-20-RTW.jpg
+          https://assets.vogue.com/photos/5e555ec203477100087908d7/master/w_1600,c_limit/00003-COS-FALL-20-RTW.jpg
+          https://assets.vogue.com/photos/5e555eca56da1c0008bf7556/master/w_1600,c_limit/00001-COS-FALL-20-RTW.jpg
+          https://assets.vogue.com/photos/5e555eb7b7c4520008698e09/master/w_1600,c_limit/00006-COS-FALL-20-RTW.jpg
+          https://assets.vogue.com/photos/5e555ef1606474000893c7f7/master/w_1600,c_limit/00007-COS-FALL-20-RTW.jpg
+          https://assets.vogue.com/photos/5e555f1e09fa88000894470e/master/w_1600,c_limit/00009-COS-FALL-20-RTW.jpg
+          https://assets.vogue.com/photos/5e555f37606474000893c7fc/master/w_1600,c_limit/00010-COS-FALL-20-RTW.jpg
+          https://assets.vogue.com/photos/5e555ecef58d3c0008a31473/master/w_1600,c_limit/00011-COS-FALL-20-RTW.jpg
+          https://assets.vogue.com/photos/5e555ebcb13171000830f0a7/master/w_1600,c_limit/00017-COS-FALL-20-RTW.jpg
+          https://assets.vogue.com/photos/5e555ec6aa1f010009fc69f6/master/w_1600,c_limit/00018-COS-FALL-20-RTW.jpg
+          https://assets.vogue.com/photos/5e555eadd9815c0008f408ae/master/w_1600,c_limit/00019-COS-FALL-20-RTW.jpg
+          https://assets.vogue.com/photos/5e555efbf2b075000879e736/master/w_1600,c_limit/00021-COS-FALL-20-RTW.jpg
+          https://assets.vogue.com/photos/5e555f5aa631190008eea61c/master/w_1600,c_limit/00022-COS-FALL-20-RTW.jpg
+          https://assets.vogue.com/photos/5e555ea9d9815c0008f408ac/master/w_1600,c_limit/00023-COS-FALL-20-RTW.jpg
+          https://assets.vogue.com/photos/5e555facfe25710008679660/master/w_1600,c_limit/00025-COS-FALL-20-RTW.jpg
+          https://assets.vogue.com/photos/5e555eb1a631190008eea61a/master/w_1600,c_limit/00030-COS-FALL-20-RTW.jpg
+          https://assets.vogue.com/photos/5e555f5f273861000896d4e9/master/w_1600,c_limit/00039-COS-FALL-20-RTW.jpg
+          https://assets.vogue.com/photos/5e555f53d9815c0008f408b4/master/w_1600,c_limit/00035-COS-FALL-20-RTW.jpg
+          https://assets.vogue.com/photos/5e555f7990d227000908c723/master/w_1600,c_limit/00036-COS-FALL-20-RTW.jpg
+          https://www.net-a-porter.com/variants/images/32027475399533966/bk/w920_q60.jpg
+          https://www.net-a-porter.com/variants/images/20346390235873760/bk/w920_q60.jpg
+          https://www.net-a-porter.com/variants/images/32027475399533969/bk/w920_q60.jpg
+          https://www.net-a-porter.com/variants/images/34344356236930600/bk/w920_q60.jpg
+          https://unpkg.com/boxicons@latest/css/boxicons.min.css
+          https://fonts.googleapis.com
+          https://fonts.gstatic.com
+          https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap
+          Matteson, Steve. Designer. 2011.
+          https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans"
+          https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans
+          Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from 
+          https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label
+          https://learn.shayhowe.com/html-css/building-forms/#practice-1
+          https://www.w3schools.com/howto/howto_css_checkout_form.asp
+          https://blog.hubspot.com/marketing/jump-link-same-page
+          https://codepen.io/amardilo/pen/naaevB
+          https://skinbetter.com/wp-content/uploads/2017/10/Skincare-Tips-in-Your-30s.jpg
+          https://www.cos.com/en/women/womenswear/tops/product.tie-back-long-sleeved-top-black.1112330002.html
+          https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vogue.com%2Ffashion-shows%2Ffall-2020-ready-to-wear%2Fcos&psig=AOvVaw0XVjLLvV23ufy1LJSSol0j&ust=1666428502182000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCND2son48PoCFQAAAAAdAAAAABAE
+          https://www.youtube.com/c/EasyTutorialsVideo
+          https://www.youtube.com/channel/UC6iO-h3n4adFsp3krxznqHg
+          https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
+          https://www.youtube.com/channel/UC6iO-h3n4adFsp3krxznqHg
+          https://www.youtube.com/channel/UC6iO-h3n4adFsp3krxznqHg
+          https://github.com/shanjairaj
+          https://www.youtube.com/watch?v=JmDw6WjC6Qw
+          -->
+
+        </p>
+      </ul>
+
+    </section>
+
+
+
+  </body>
+</html>
+<!--
+references
+
+https://www.refinery29.com/en-us/shop/product/folded-leather-shopper-101019
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cos.com%2Fen%2Fwomen%2Faccessories%2Fbags%2Fproduct.quilted-oversized-shoulder-bag-beige.0916460002.html&psig=AOvVaw20zz7YWyFf1HR7bY3QHqIR&ust=1666861089397000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCLi2gsvD_foCFQAAAAAdAAAAABAH
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hollandcooper.com%2Fcollections%2Fbags&psig=AOvVaw1WUW5M6aDegxE047wWUiot&ust=1666860496362000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCKjblbDB_foCFQAAAAAdAAAAABAr
+https://www.tusting.co.uk/wp-content/uploads/Tusting-Kimbolton-Tan-LS-Banner.jpg
+https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.tvj.co.kr%2Fnews%2FarticleView.html%3Fidxno%3D66430&psig=AOvVaw1G9a2fJmuolgWiAEC6G7NL&ust=1666861027519000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCMijqa3D_foCFQAAAAAdAAAAABAE
+https://www.vogue.com/fashion-shows/fall-2020-ready-to-wear/cos/slideshow/collection#1
+https://assets.vogue.com/photos/5e555f199e08500008aafa16/master/w_1600,c_limit/00002-COS-FALL-20-RTW.jpg
+https://assets.vogue.com/photos/5e555ec203477100087908d7/master/w_1600,c_limit/00003-COS-FALL-20-RTW.jpg
+https://assets.vogue.com/photos/5e555eca56da1c0008bf7556/master/w_1600,c_limit/00001-COS-FALL-20-RTW.jpg
+https://assets.vogue.com/photos/5e555eb7b7c4520008698e09/master/w_1600,c_limit/00006-COS-FALL-20-RTW.jpg
+https://assets.vogue.com/photos/5e555ef1606474000893c7f7/master/w_1600,c_limit/00007-COS-FALL-20-RTW.jpg
+https://assets.vogue.com/photos/5e555f1e09fa88000894470e/master/w_1600,c_limit/00009-COS-FALL-20-RTW.jpg
+https://assets.vogue.com/photos/5e555f37606474000893c7fc/master/w_1600,c_limit/00010-COS-FALL-20-RTW.jpg
+https://assets.vogue.com/photos/5e555ecef58d3c0008a31473/master/w_1600,c_limit/00011-COS-FALL-20-RTW.jpg
+https://assets.vogue.com/photos/5e555ebcb13171000830f0a7/master/w_1600,c_limit/00017-COS-FALL-20-RTW.jpg
+https://assets.vogue.com/photos/5e555ec6aa1f010009fc69f6/master/w_1600,c_limit/00018-COS-FALL-20-RTW.jpg
+https://assets.vogue.com/photos/5e555eadd9815c0008f408ae/master/w_1600,c_limit/00019-COS-FALL-20-RTW.jpg
+https://assets.vogue.com/photos/5e555efbf2b075000879e736/master/w_1600,c_limit/00021-COS-FALL-20-RTW.jpg
+https://assets.vogue.com/photos/5e555f5aa631190008eea61c/master/w_1600,c_limit/00022-COS-FALL-20-RTW.jpg
+https://assets.vogue.com/photos/5e555ea9d9815c0008f408ac/master/w_1600,c_limit/00023-COS-FALL-20-RTW.jpg
+https://assets.vogue.com/photos/5e555facfe25710008679660/master/w_1600,c_limit/00025-COS-FALL-20-RTW.jpg
+https://assets.vogue.com/photos/5e555eb1a631190008eea61a/master/w_1600,c_limit/00030-COS-FALL-20-RTW.jpg
+https://assets.vogue.com/photos/5e555f5f273861000896d4e9/master/w_1600,c_limit/00039-COS-FALL-20-RTW.jpg
+https://assets.vogue.com/photos/5e555f53d9815c0008f408b4/master/w_1600,c_limit/00035-COS-FALL-20-RTW.jpg
+https://assets.vogue.com/photos/5e555f7990d227000908c723/master/w_1600,c_limit/00036-COS-FALL-20-RTW.jpg
+https://www.net-a-porter.com/variants/images/32027475399533966/bk/w920_q60.jpg
+https://www.net-a-porter.com/variants/images/20346390235873760/bk/w920_q60.jpg
+https://www.net-a-porter.com/variants/images/32027475399533969/bk/w920_q60.jpg
+https://www.net-a-porter.com/variants/images/34344356236930600/bk/w920_q60.jpg
+https://unpkg.com/boxicons@latest/css/boxicons.min.css
+https://fonts.googleapis.com
+https://fonts.gstatic.com
+https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap
+Matteson, Steve. Designer. 2011.
+https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans"
+https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans
+Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label
+https://learn.shayhowe.com/html-css/building-forms/#practice-1
+https://www.w3schools.com/howto/howto_css_checkout_form.asp
+https://blog.hubspot.com/marketing/jump-link-same-page
+https://codepen.io/amardilo/pen/naaevB
+https://skinbetter.com/wp-content/uploads/2017/10/Skincare-Tips-in-Your-30s.jpg
+https://www.cos.com/en/women/womenswear/tops/product.tie-back-long-sleeved-top-black.1112330002.html
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vogue.com%2Ffashion-shows%2Ffall-2020-ready-to-wear%2Fcos&psig=AOvVaw0XVjLLvV23ufy1LJSSol0j&ust=1666428502182000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCND2son48PoCFQAAAAAdAAAAABAE
+https://www.youtube.com/c/EasyTutorialsVideo
+https://www.youtube.com/channel/UC6iO-h3n4adFsp3krxznqHg
+https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
+https://www.youtube.com/channel/UC6iO-h3n4adFsp3krxznqHg
+https://www.youtube.com/channel/UC6iO-h3n4adFsp3krxznqHg
+-->

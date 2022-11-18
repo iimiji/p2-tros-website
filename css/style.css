@@ -123,6 +123,20 @@ header{
 	display: block;
   }
 
+  @media (max-width: 800px) {
+	.dropdown-content:hover{
+		display: none;
+	}
+	.dropdown:hover .dropbtn {
+		display: none;
+	}
+	.dropdown .dropbtn{
+		display: none;
+	}
+	.dropdown .dropbtn:hover{
+		display: none;
+	}
+  }
 
 
 section{
@@ -146,9 +160,11 @@ section{
 	line-height: 1.2;
 	letter-spacing: .3rem;
 	margin-bottom: 1.4rem;
+	text-shadow: 2px 2px 2px #fffef7;
 }
 .home-text span{
 	font-size: var(--h2-font);
+	text-shadow: 2px 2px 2px #fffef7;
 }
 .home-text p{
 	font-size: var(--normal-font);
@@ -156,7 +172,25 @@ section{
 	margin-bottom: 3rem;
 	letter-spacing: .2rem;
 }
-
+@media (max-width: 670px){
+	.home-text h1{
+		font-size: 38px;
+		text-align: center;
+	}
+	.home-text span{
+		font-size: 40px;
+		text-align: center;
+	}
+	.home-text p{
+		text-align: center;
+	}
+	.home-text .btn{
+		width: 56%;
+		margin-left: 22%;
+		margin-right: 22%;
+		text-align: center;
+	}
+}
 /*about main image*/
 .about-img{
 	min-height: 60vh;
@@ -209,6 +243,7 @@ header.sticky{
 	padding: 14px 14%;
 	box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
 }
+
 /*
 featrue
 */
@@ -299,6 +334,20 @@ sale banner
 	line-height: 1.2;
 	letter-spacing: .6rem;
 	margin-bottom: 30px;
+	text-shadow: 2px 2px 2px #fffef7;
+
+}
+@media (max-width: 670px){
+	.cta-text h6{
+		font-size: 20px;
+	}
+	.cta-text h4{
+		font-size: 34px;
+	}
+	.cta .btn{
+		display: none;
+	}
+	
 }
 /*
 dress banner
@@ -577,34 +626,43 @@ cart
 		width: 100%;
 		background-color: #F7F4F1;
 		padding: 30px;
-		max-width: 80%;
+		max-width: 92%;
 		border-radius: 10px;
-		margin-top: 8rem;
+		margin-top: 20%;
 		margin-bottom: 6rem;
-		margin-left: 10%;
-		margin-right: 10%;
+		margin-left: 4%;
+		margin-right: 4%;
+		text-align: center;
 	  }
 	  .cart-table {
 		width: 100%;
 		max-width: 100%;
-		margin-bottom: 20px;
 		background: white;
 		text-align: center;
 	  }
 	  .cart-table td {
 		display:flex;
-		text-align: right;
+		flex-direction: column;
+		flex-wrap: wrap;
+		text-align: center;
+		align-items: center;
+		font-size: 14px;
 	  }
+	  
 	  .cart-table th{
-		display:flex;
-		text-align: left;
-	  }/*Is there any way that I can lower th*/
+		display:none;
+	  }
+	  
+	  /*Is there any way that I can lower th*/
 	  .cart-table th:nth-child(2) {
-		width: 20%;
+		display: none;
 	  }
 	  
 	  .cell-long {
-		width: 90%;
+		display: none;
+	  }
+	  .cart-background .btn {
+		width: 100%;
 	  }
   }
 
@@ -613,7 +671,6 @@ payment
 */
 
 .payment_row {
-	display: -ms-flexbox; /* IE10 */
 	display: flex;
 	-ms-flex-wrap: wrap; /* IE10 */
 	flex-wrap: wrap;
@@ -621,8 +678,10 @@ payment
   }
   
   .col-25 {
+	margin-top: 8%;
+	margin-bottom: 1%;
 	-ms-flex: 25%; /* IE10 */
-	flex: 25%;
+	flex: 40%;
   }
   
   .col-50 {
@@ -633,6 +692,7 @@ payment
   .col-75 {
 	-ms-flex: 75%; /* IE10 */
 	flex: 75%;
+	margin-bottom: 10%;
   }
   
   .col-25,
@@ -646,15 +706,12 @@ payment
 	padding: 5px 20px 15px 20px;
 	border-radius: 10px;
 	margin-left: 16%;
-	margin-top: 8rem;
-	margin-bottom: 4rem;
 	max-width: 70%;
   }
-
-  .col-25 .container_2 {
-	margin-right: 20%;
+  .container_2 .btn {
+	width: 100%;
+	text-align: center;
   }
-
   input[type=text] {
 	width: 100%;
 	margin-bottom: 20px;
@@ -677,7 +734,6 @@ payment
   }
   
   label {
-	/*margin-bottom: 10px;*/
 	display: block;
   }
   
@@ -699,7 +755,25 @@ payment
 	  flex-direction: column-reverse;
 	}
 	.col-25 {
-	  margin-bottom: 20px;
+	  display: none;
+	}.col-50 {
+		margin-bottom: 2px;
+	}
+	.payment_row {
+		flex-direction: column;
+	}
+	.container_2{
+		margin-left: 5%;
+		margin-right: 5%;
+		min-width: 90%;
+		margin-top: 20%;
+	}
+	.container_2 h3{
+		text-align: center;
+	}
+	.container_2 .btn{
+		width: 100%;
+		text-align: center;
 	}
   }
 
@@ -749,7 +823,13 @@ payment
 	border: 1px solid black;
 	box-sizing: border-box;
   }
-
+  @media (max-width: 670px){
+	.explain-box {
+		width: 96%;
+		max-width: 100%;
+		margin-left: 2%;
+	}
+  }
 
   /*detail*/
 
@@ -873,16 +953,17 @@ detail page
  */
 
  #contact_1{
-	margin-left: 10%;
 	width: 100%;
  }
  #contact_2 {
 	position: relative;
-	width: 60%;
+	margin-left: 25%;
+	width: 50%;
 	margin-top: 30px;
 	background-color: #F7F4F1;
 	border-radius: 10px;
 	padding: 20px;
+	text-align: center;
  }
 
   #contact_2 textarea {
@@ -892,17 +973,111 @@ detail page
 	padding: 15px;
 	background: transparent;
 	outline: none;
-	font-size: 0.875em;
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	background-color: #ffffff;
 	border: 1px solid #d4d4d4;
-	font-size: 11px;
+	font-size: 14px;
   }
   
   #contact_2 textarea:hover {
 	background: #E2C5A7;
 	color: #000000;
+  }
+  #contact_2 .btn {
+	width: 40%;
+  }
+  @media(max-width: 800px){
+	#contact_1{
+		width: 100%;
+		margin-left: 0%;
+	}
+	#contact_2{
+		width: 90%;
+		margin-left: 5%;
+	}
+	#contact_2 .btn{
+		width: 80%;
+	}
+  }
+  
+  /*feedback*/
+  .panel-container {
+	margin: 10%;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+	font-size: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	max-width: 30%;
+	margin-left: 35%;
+	text-align: center;
+  }
+  
+  .panel-container strong {
+	line-height: 20px;
+  }
+  
+  .panel-container p {
+	margin: 25px 0;
+	line-height: 20px;
+  }
+  
+  .ratings-container {
+	display: flex;
+	margin: 20px 0;
+  }
+  
+  .rating {
+	cursor: pointer;
+	flex: 1;
+	padding: 20px;
+	margin: 10px 5px;
+  }
+  
+  .rating2 img{
+	width: 20%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+  }
+  .rating.active,
+  .rating:hover {
+	border-radius: 4px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rating img {
+	width: 40px;
+  }
+  
+  .rating small {
+	color: #555;
+	display: inline-block;
+	margin: 10px 0 0;
+  }
+  
+  .rating.active small,
+  .rating:hover small {
+	color: #111;
+  }
+  
+  .fa-heart {
+	color: red;
+	font-size: 30px;
+	margin-bottom: 10px;
+  }
+
+  @media(max-width: 800px){
+	.panel-container {
+		max-width: 80%;
+		margin-left: 10%;
+		margin-top: 45%;
+		margin-bottom: 30%;
+	}
   }

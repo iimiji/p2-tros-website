@@ -46,10 +46,25 @@
 	</header>
   
   <div class="payment_row">
+    <div class="col-25">
+      <div class="container_2">
+        <h4>Cart
+          <span class="price" style="color:black">
+            <i class="fa fa-shopping-cart"></i>
+            <b>[1] item</b><br>
+          </span>
+        </h4><br>
+        <p><a href="dress01.html">Product 1</a> <span class="price">$499.99</span></p>
+        <br>
+        <hr>
+        <p><span class="price" style="color:black"><b>$499.99</b></span></p><br>
+      </div>
+    </div>
     <div class="col-75">
       <div class="container_2">
         <form action="/action_page.php">
   
+          
           <div class="payment_row">
             <div class="col-50">
               <h3>Billing Address</h3><br>
@@ -76,7 +91,8 @@
   
             <div class="col-50">
               <h3>Payment</h3><br>
-              
+              <label for="cname">Bank Company</label>
+              <input type="text" id="cname" name="cardname" placeholder="TD | RBC | Master">
               <label for="cname">Name on Card</label>
               <input type="text" id="cname" name="cardname" placeholder="Miji Kim">
               <label for="ccnum">Credit card number</label>
@@ -100,28 +116,12 @@
             <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
           </label>
           <br>
-          <a href="#" class="btn">Continue to checkout</a>
+          <a href="orderSent.html" class="btn">Checkout</a>
         </form>
       </div>
     </div>
   
-    <div class="col-25">
-      <div class="container_2">
-        <h4>Cart
-          <span class="price" style="color:black">
-            <i class="fa fa-shopping-cart"></i>
-            <b>[4]</b><br>
-          </span>
-        </h4><br>
-        <p><a href="#back-to-detail">Product 1</a> <span class="price">$499</span></p>
-        <p><a href="#back-to-detail">Product 2</a> <span class="price">$599</span></p>
-        <p><a href="#back-to-detail">Product 3</a> <span class="price">$899</span></p>
-        <p><a href="#back-to-detail">Product 4</a> <span class="price">$299</span></p>
-        <br>
-        <hr>
-        <p><span class="price" style="color:black"><b>$2,296</b></span></p><br>
-      </div>
-    </div>
+    
   </div>
       
   <!----contact--->
@@ -151,13 +151,17 @@
 			<li><a href="../html/bottom.html">Bottom</a></li>
 			<li><a href="../html/bag.html">Bag</a></li>
         </ul>
-
+        <ul class="main-contact">
+          <li>StyleGuide</li>
+          <li><a href="../P2-TROS_StyleGuide/index.html">Explore our style</a></li>
+            </ul>
 	</section>
 
 
 	<div class="last-text">
 		<p>Copyright © 2022 All rights reserved</p>
 	</div>
+	<script src="../js/script.js"></script>
 
 </body>
 </html>
