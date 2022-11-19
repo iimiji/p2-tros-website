@@ -200,6 +200,7 @@ navlist
 }
 .navlist{
 	display: flex;	
+	
 }
 .navlist a{
 	color: var(--text-color);
@@ -207,6 +208,7 @@ navlist
 	padding: 10px 25px;
 	font-size: var(--normal-font);
 	transition: all .36s ease;
+
 }
 .navlist a:hover{
 	color: var(--main-color);
@@ -580,7 +582,7 @@ cart
   width: 100%;
   max-width: 700px;
   margin-bottom: 20px;
-  background: #fffef7;
+  background: #fff;
   text-align: center;
 }
 
@@ -644,7 +646,7 @@ textarea:hover {
   margin-bottom: 20px;
 }
 .account-info input {
-  background: #fffef7;
+  background: #fff;
   border: 1px solid #d4d4d4;
   color: #000000;
   padding: 6px;
@@ -899,6 +901,7 @@ detail page
 	.navlist a{
 		display: block;
 		margin: 1.2rem 0;
+
 	}
 	.navlist.open{
 		left: 0;
